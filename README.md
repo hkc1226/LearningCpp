@@ -162,7 +162,6 @@
 
     - **_`<ctime>` :_** Provides functionality for working with **date and time information.**
 
-    - **_`<fstream>` :_**
     - **_`<string>` :_** Defines the **string class** and related **functions for string manipulation**.
 
           #include <string>
@@ -274,7 +273,9 @@
 
 ## **Some standard liberary objects:**
 
-- **_`cout` :_** used with **_`<<`_** to **output values / print** text on console or display. By default **_`cout`_** does not insert any new line automatically after the completion of **_`cout`_** statement(S).
+- **_`cout` :_** used with **_( `<<` )_ to write/print output values/text** on console/display. By default **_`cout`_** does not insert any new line automatically after the completion of **_`cout`_** statement(S).
+
+  > **_( `<<` ) :_** known as **Stream insertion operator** or simply **Insertion operator.**
 
   - **e.g:-**
 
@@ -293,6 +294,10 @@
           /*              Output:            */
           /* =============================== */
           hello worldThis is first cpp programm.
+
+- **_`cin` :_** Used with **_( `>>` )_** **Reads data** from the keyboard or other input devices.
+
+  > **_( `>>` ) :_** known as **Stream extraction operator** or simply **Extraction operator.**
 
 - **_`endl` :_** Terminate the current line and jump into a **new-line.**
 
@@ -363,3 +368,116 @@
         multiline
         comment.
         */
+
+## **Variable Declaration:**
+
+- **Variables:** Variables in **_`C++`_** are like containers to **store data values.**
+
+- **_Variables declaration:_** There can be couple of ways to declare a variable in **_`C++`._**
+
+  - Assign value to variable while declaring it.
+
+    ![var-dec-1](./Images/var-dec-1.png)
+
+            // Syntax:
+            dataType varName = value;
+
+            // Example:
+            int num = 24;
+            float n = 2.34;
+            char character = 'H';
+            string str = "Hrishikesh";
+
+  - Declaring varible and assigning it later.
+
+    ![var-dec-2](./Images/var-dec-2.png)
+
+            // Syntax:
+            dataType varName;
+            varName = value;
+
+            // Example:
+            float n;
+            string str;
+            n = 2.01;
+            str = "C++";
+
+  - Declaring more than one variable of same type in a single statement.
+
+    ![var-dec-3](./Images/var-dec-3.png)
+
+            // Syntax:
+            dataType var1 = val1, var2 = val2, ..., varN = valN;
+
+            // Example:
+            int a = 12, b = 43, c = 23;
+            string fname = "Hrishikesh", lname = "Kumar";
+
+  - Declaring variables and then assigning it later.
+
+    ![var-dec-4](./Images/var-dec-4.png)
+
+            // Syntax:
+            dataType var1, var2, ..., varN;
+            var1 = val1, var2 = val2, ..., varN = valN;
+            // If multiple variables have same value.
+            var1 = var2 = ... = value
+
+            // Example:
+            int a, b, c, d, e, f;
+            a = 12, b = 43, c = 23;
+            d = e = f = 101;
+
+> **_NOTE :_** If a variable is assigned with new value, its earlier value will be overwritten if any.
+
+## **Constant Declaration:**
+
+- A value is declared as **constant** which is **not likely to be changed** further in the code.
+
+- A **constant declaration** must follow the rules to avoid any occurance of errors in following cases:
+
+  - **must be assigned during its declaration**.
+
+  - **should not be re-assigned** after its declaration.
+
+    ![incorrect-const-dec](./Images/const-dec-incorrect.png)
+
+- It is **declared using _`const`_** keyword in **_`C++`._**
+
+  ![const-dec](./Images/const-dec.png)
+
+          // Syntax:
+          const dataType varName = value;
+
+          // Example:
+          const float PI = 3.1428;
+          const int daysPerWeek = 7;
+
+## **Identifiers:**
+
+- **Identifiers** are actually used to name variables. There are some important rules to follow while creating an identifier/variable.
+
+  - It must contains only **letters, digits** and **underscores ( `_` ).**
+  - It must **start with** either **letter or underscore** but not digit.
+  - Identifiers are **case-sensitive**.
+  - **White-space(s)** are **not allowed** in identifier.
+  - Special characters **(!, @, #, $, %...etc.)** are **not allowed** except underscore **( \_ ).**
+  - Reserved key-word in Cpp are not allowed to be used as an identifier.
+
+## **Data types in _`C++`:_**
+
+- Various data types that are supported in **_`C++`_** are:
+
+  - **`bool` ( 1** byte **) _:_** Only two values: **_true = 1_**, **_false = 0._**
+  - **`char` ( 1** byte **) _:_** can be assined with **only one character** within single quote **_:_** like **_`'e'`_.**
+  - **`int` ( 2** or **4** bytes **) _:_** stores only **non-decimal numbers** with smaller range.
+  - **`long` ( 4** bytes **) _:_** stores only **non-decimal numbers** with larger range.
+  - **`long long` ( 8** bytes **) _:_** stores only **non-decimal numbers** with larger range than **_`long`_**.
+  - **`float` ( 4** bytes **) _:_** stores only **decimal numbers** with smaller range.
+  - **`double` ( 8** bytes **) _:_** stores only **decimal numbers** with larger range.
+  - **`string` ( 32** bytes **) _:_** stores **sequence of characters** within double quotes ( **_`" "`_** ) and **Not built-in type**, but behaves like one.
+
+- **Decimal number precision**:
+
+  - **_`float` :_ 6** or **7** digits.
+  - **_`double` :_ 15** digits.

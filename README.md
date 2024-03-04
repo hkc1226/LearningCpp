@@ -74,13 +74,19 @@
 
       ![command to compile cpp code](./Images/compile-cpp-code.png)
 
+              // To compile / build C++ code.
               >> g++ -o filename filename.cpp
+                              OR
+              >> g++ -std=c++11 demo.cpp -o demo
 
     - **_To <u>Run</u> :_** Write command **_`filename.exe`_** in command line and **Hit Enter.**
 
       ![command to run cpp code](./Images/run-cpp-code.png)
 
-              >> filename.exe
+              // To run C++ code.
+              >> filename.exe // In window cmd prompt.
+                              OR
+              >> ./filename // In VS Code terminal
 
 ## **Basic Structure of _`C++`_ programming:**
 
@@ -88,18 +94,22 @@
 
   ![Basic Structure of Cpp](./Images/basic-structure-of-cpp-code.png)
 
+          // Basic structure of C++ code.
+
           #include <iostream>
 
           using namespace std;
 
-          int main(){
+          int main() {
             // Code goes here
             return 0;
           }
 
 ### **_Explanation:_**
 
-- **_Line 1:_** consists of a **_<u>Preprocessor Directives</u>_** & **_<u>Header File Liberary</u>._**
+- **_Line 1:_** This is a **single line comment,** not executable by compiler.
+
+- **_Line 3:_** consists of a **_<u>Preprocessor Directives</u>_** & **_<u>Header File Liberary</u>._**
 
   - **_Preprocessor directives: <u>`#include`</u>, <u>`#define`</u>_ etc.**
 
@@ -131,11 +141,136 @@
               #define SQUARE(x) ((x)*(x))
 
   - **_Header file liberary: <u>`<iostream>`</u>, <u>`<cmath>`</u>, <u>`<ctime>`</u>, <u>`<fstream>`</u>, <u>`<string>`</u>_ etc.**
-    - Each header file liberary offers a wide range of functionalities to use within the **_`C++`_** code.
-      <br>
-      <br>
 
-<hr style="background:linear-gradient(to right,violet,indigo,blue,green,yellow, orange, red);border-radius:50px; height:10px;border:2px solid black;">
+    - Each header file liberary offers a wide range of functionalities to use within the **_`C++`_** code.
+
+    - **_`<iostream>` :_** Provides facilities for performing **input** and **output operations.**
+
+      **_1._** It defines several **classes and objects** that allow you to work with **input streams _( `std::cin` )_** and **output streams _( `std::cout`, `std::cerr`, `std::clog` )._**
+
+      **_2._** Provides **escape characters** like **_( `std::endl`, `std::ends` )_**
+
+    - **_`<cmath>` :_** Provides a collection of **mathematical functions.**
+
+      **_1._ Trigonometric functions: _`sin(x)`_, _`cos(x)`_, _`tan(x)`_, _`asin(x)`_, _`acos(x)`_, _`atan(x)`_, _`sinh(x)`_, _`cosh(x)`_, _`tanh(x)`_ etc.**
+
+      **_2._ Exponential & Logarithmic Functions: _`exp(x)`_, _`log(x)`_, _`log10(x)`_, _`log2(x)`_, _`pow(x, y)`_ etc.**
+
+      **_3._ Square root and Absolute functions: _`sqrt(x)`_, _`fabs(x)`_**
+
+      **_4._ Rounding functions: _`ceil(x)`_, _`floor(x)`_, _`round(x)`_ etc.**
+
+    - **_`<ctime>` :_** Provides functionality for working with **date and time information.**
+
+    - **_`<fstream>` :_**
+    - **_`<string>` :_** Defines the **string class** and related **functions for string manipulation**.
+
+          #include <string>
+
+      **_1._ String declaration and initialization:**
+
+          std::string str1 = "Hello World!";
+
+      **_2._ Strings concatenation:**
+
+          std::string str1 = "Hrishikesh ";
+          std::string str2 = "Kumar";
+          std::string result = str1 + str2;
+
+          // Output:
+          Hrishikesh Kumar
+
+      **_3._ Accessing character from string:**
+
+          std::string str1 = "Hrishikesh";
+          char i_th_char = str[i];
+          char j_th_char = str[j];
+
+      **_4._ String manipulation:**
+
+      - **Finding substrings:**
+
+            // find index position of first matched character.
+
+            std::string str1 = "hrishikesh";
+            size_t k_pos = str1.find("k");
+            std::cout << k_pos;
+
+      - **Erasing substrings:**
+
+            // erase 3 characters starting from index-3.
+
+            std::string str1 = "hrishikesh";
+            std::cout << str1.erase(3,3);
+
+      - **Replacing substrings:**
+
+            // replace 3 characters starting from index-3 by "Kumar".
+
+            std::string str1 = "hrishikesh";
+            std::cout << str1.replace(3,3,"Kumar");
+
+      **_5._ String conversion:**
+
+      - **String to Integer: _( `stoi(str)` )_**
+
+            // convert string into integer value.
+
+            std::string str1 = "5";
+            int num = std::stoi(str1);
+            std::cout << "String to int: " << num ;
+
+      - **String to Float: _( `stof(str)` )_**
+
+            // convert string into float value.
+
+            std::string str1 = "5.755";
+            float num = std::stof(str1);
+            std::cout << "String to float: " << num ;
+
+      - **Integer to String:**
+
+            // convert integer into string.
+            // convert int/float into string.
+
+            float num1 = 56.3;
+            int num2 = 435;
+            std::string str1 = std::to_string(num1);
+            std::string str2 = std::to_string(num2);
+            std::cout << "float to string: " << str1 << std::endl;
+            std::cout << "int to string: " << str2;
+
+    > **_NOTE :_** Never terminates the header files with semicolon **_( `;` )_**
+
+- **_Line 5:_** **_`using namespace std;`_** It includes **_`namespace`_** standard liberary to prevent naming conflicts.
+
+  - Used to **organize code into logical groups.**
+
+  - Allows to remove prefix **_`std::`_** from every standard liberary functions.
+
+  - When we use **_`using namespace std;`_** directives. Then -
+
+    - **_`std::cout`_** can be written as **_`cout`_.**
+
+    - **_`std::cin`_** can be written as **_`cin`_.**
+
+    - **_`std::endl`_** can be written as **_`endl`_ etc.**
+
+- **_Line 7:_** **_`int main()`_** It is the **_`main()`_** function that we'll see in every C++ code.
+
+  - Actually code execution begins inside **_`main()`_** function.
+
+  - **_`main()`_** function must have a return type of **_`int`_.**
+
+- **_Line 7 col-12: ( `{` ) :_** Begins the **`main()` function body**.
+
+- **_Line 8:_** Spaces for function body to be written here enclosed within curly braces **_( `{`_**
+  **// function body**
+  **_`}` )._**
+
+- **_Line 9: `return 0;`_** Terminates the code execution inside **_`main()`_** function.
+
+- **_Line 10 col-1 : ( `}` ) :_** Ends the **`main()` function body**.
 
 ## **Some standard liberary objects:**
 
@@ -180,8 +315,6 @@
           hello world
           This is first cpp programm.
 
-<hr style="background:linear-gradient(to right,violet,indigo,blue,green,yellow, orange, red);border-radius:50px; height:10px;border:2px solid black;">
-
 ## **Escape Sequence:**
 
 - **_newline character (`\n`) :_** Terminate the current line and jump into a **new-line.**
@@ -216,8 +349,6 @@
             3. backslash\character.
             4. "double quote"
 
-<hr style="background:linear-gradient(to right,violet,indigo,blue,green,yellow, orange, red);border-radius:50px; height:10px;border:2px solid black;">
-
 ## **Comment style in _`Cpp` :_**
 
 - There are two ways to write comment in _`Cpp`_.
@@ -232,5 +363,3 @@
         multiline
         comment.
         */
-
-<hr style="background:linear-gradient(to right,violet,indigo,blue,green,yellow, orange, red);border-radius:50px; height:10px;border:2px solid black;">

@@ -74,15 +74,28 @@
 
       ![command to compile cpp code](./Images/compile-cpp-code.png)
 
+              >> g++ -o filename filename.cpp
+
     - **_To <u>Run</u> :_** Write command **_`filename.exe`_** in command line and **Hit Enter.**
 
       ![command to run cpp code](./Images/run-cpp-code.png)
+
+              >> filename.exe
 
 ## **Basic Structure of _`C++`_ programming:**
 
 - Here is the **basic structure** of **_`C++`_** code.
 
   ![Basic Structure of Cpp](./Images/basic-structure-of-cpp-code.png)
+
+          #include <iostream>
+
+          using namespace std;
+
+          int main(){
+            // Code goes here
+            return 0;
+          }
 
 ### **_Explanation:_**
 
@@ -96,11 +109,26 @@
 
       ![Preprocessor directive > include](./Images/preprocessor-directives-include.png)
 
+              #include <iostream>
+              #include <cmath>
+              #include <string>
+
     - **_`#define`:_** Used for **defining _constant_** or **_macros._**
 
       ![img1](./Images/preprocessor-directives-const-definition.png)
 
+              // Defining constant.
+              // Syntax:
+              #define constName constVal
+
       ![img2](./Images/preprocessor-directives-macros-definition.png)
+
+              // Defining Macros.
+              // Syntax:
+              #define MACRO_NAME(parameters) macro_body
+
+              // Example:
+              #define SQUARE(x) ((x)*(x))
 
   - **_Header file liberary: <u>`<iostream>`</u>, <u>`<cmath>`</u>, <u>`<ctime>`</u>, <u>`<fstream>`</u>, <u>`<string>`</u>_ etc.**
     - Each header file liberary offers a wide range of functionalities to use within the **_`C++`_** code.
@@ -117,11 +145,40 @@
 
     ![cout-example](./Images/cout-example.png)
 
+          #include <iostream>
+
+          using namespace std;
+          int main(){
+            cout<<"hello world";
+            cout<<"This is first cpp programm.";
+            return 0;
+          }
+
+          /* =============================== */
+          /*              Output:            */
+          /* =============================== */
+          hello worldThis is first cpp programm.
+
 - **_`endl` :_** Terminate the current line and jump into a **new-line.**
 
   - **e.g:-**
 
     ![endl-example](./Images/endl-example.png)
+
+          #include <iostream>
+
+          using namespace std;
+          int main(){
+            cout<<"hello world"<<endl;
+            cout<<"This is first cpp programm.";
+            return 0;
+          }
+
+          /* =============================== */
+          /*              Output:            */
+          /* =============================== */
+          hello world
+          This is first cpp programm.
 
 <hr style="background:linear-gradient(to right,violet,indigo,blue,green,yellow, orange, red);border-radius:50px; height:10px;border:2px solid black;">
 
@@ -139,6 +196,26 @@
 
     ![2-esc-seq](./Images/2-esc-seq-example.png)
 
+            #include <iostream>
+
+            using namespace std;
+
+            int main(){
+              cout<<"1. New-line character.\n";
+              cout<<"2. tab-space\tcharacter."<<endl;
+              cout<<"3. backslash\\character.\n";
+              cout<<"4. \"double quote\"";
+              return 0;
+            }
+
+            /* ================================= */
+            /*             Output:               */
+            /* ================================= */
+            1. New-line character.
+            2. tab-space	character.
+            3. backslash\character.
+            4. "double quote"
+
 <hr style="background:linear-gradient(to right,violet,indigo,blue,green,yellow, orange, red);border-radius:50px; height:10px;border:2px solid black;">
 
 ## **Comment style in _`Cpp` :_**
@@ -146,5 +223,14 @@
 - There are two ways to write comment in _`Cpp`_.
 
   ![comment-style](./Images/comment-style.png)
+
+        // This is single line comment.
+
+        /*
+        This
+        is
+        multiline
+        comment.
+        */
 
 <hr style="background:linear-gradient(to right,violet,indigo,blue,green,yellow, orange, red);border-radius:50px; height:10px;border:2px solid black;">

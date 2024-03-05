@@ -561,8 +561,8 @@
 - Operators are used to perform specific operations on operands (variable(s) or value(s)).
 
 - There are typically two types of operators:
-  - Binary operator
-  - Unary operator
+  - **Binary operator:** Binary operators operates on two operands.
+  - **Unary operator:** Unary operators operates on single operands.
 
 ### **Arithmatic operators:**
 
@@ -594,6 +594,9 @@
 - **Modulus assignment _( `%=` )_ :** used to assign the value of right operand to the left operand.
 
 ### **Unary operators:**
+
+- **Increment _( `++` )_ :** It is used to update the value of operand by **adding** value **1** to its initial value.
+- **Decrement _( `--` )_ :** It is used to update the value of operand by **subtracting** value **1** from its initial value.
 
 ### **Relational operators:**
 

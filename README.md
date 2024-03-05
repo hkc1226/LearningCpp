@@ -525,7 +525,7 @@
 
   - **`string` ( 32** bytes **) _:_** stores **_sequence of characters_** within double quotes ( **_`" "`_** ) and **_Not built-in type_**, but behaves like one.
 
-#### **Decimal number precision**:
+### **Decimal number precision**:
 
 - **_`float` :_ 6** or **7** digits.
 - **_`double` :_ 15** digits.

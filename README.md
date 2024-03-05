@@ -22,7 +22,7 @@
 
   - **Object driven** language beacause of **OOPs**.
 
-  - **_Namespace_** features are present in **_`C++ programming`_** to **avoid name collisions**.
+  - **Namespace** features are present in **_`C++ programming`_** to **avoid name collisions**.
 
   - **Standard IO** header is **_`#include <iostream.h>`_** or **_`#include <iostream>`_**.
 
@@ -36,7 +36,7 @@
 
   - **Function driven** language because it is **procedural programming.**
 
-  - **_Namespace_** features are not present in **_`C-programming`_**.
+  - **Namespace** features are not present in **_`C-programming`_**.
 
   - **Standard IO** header is **_`#include <stdio.h>`_** or **_`#include <stdio>`_**.
 
@@ -227,7 +227,7 @@
             float num = std::stof(str1);
             std::cout << "String to float: " << num ;
 
-      - **Integer to String:**
+      - **Integer/Float to String: _( `to_string(int_num/float_num)` )_**
 
             // convert integer into string.
             // convert int/float into string.
@@ -269,15 +269,35 @@
 
 - **_Line 9: `return 0;`_** Terminates the code execution inside **_`main()`_** function.
 
-- **_Line 10 col-1 : ( `}` ) :_** Ends the **`main()` function body**.
+- **_Line 10 col-1 : ( `}` ) :_** Ends the **_`main()`_ function body**.
+
+## **Life cycle of C++ code:**
+
+- Life cycle of **_`C++`_** code involves the following steps:
+
+  - **Creating source code** and save source code with some filename followed by appropriate extension. such as **_`.cpp`, `.c++`, `.cc`_** or **_`.cxx`._**
+
+  - **Compile the code.**
+
+  - On successful compilation of source code, it will **create an object file** with extension **_`.obj`._**
+
+  - Then the **object file** is **linked** with **required liberary** for the proper execution of code.
+
+  - After that an **executable file is created** with the name **_`filename.exe`._**
+
+  - **Now the code is ready for execution.**
+
+  ![flows-of-cpp-code](./Images/flows-of-cpp-code-bg.png)
 
 ## **Some standard liberary objects:**
 
-- **_`cout` :_** used with **_( `<<` )_ to write/print output values/text** on console/display. By default **_`cout`_** does not insert any new line automatically after the completion of **_`cout`_** statement(S).
+- **_`cout` :_**
 
-  > **_( `<<` ) :_** known as **Stream insertion operator** or simply **Insertion operator.**
+  - Used with **_( `<<` )_ to write/print output values/text** on console/display.
 
-  - **e.g:-**
+  - By default **_`cout`_ does not insert** any **new line** automatically after the completion of **_`cout`_** statement(s).
+
+  - Use **newline-character _( `\n` )_** or **_`endl`_** to **jump to new line.**
 
     ![cout-example](./Images/cout-example.png)
 
@@ -295,9 +315,32 @@
           /* =============================== */
           hello worldThis is first cpp programm.
 
-- **_`cin` :_** Used with **_( `>>` )_** **Reads data** from the keyboard or other input devices.
+- **_`cin` :_**
 
-  > **_( `>>` ) :_** known as **Stream extraction operator** or simply **Extraction operator.**
+  - Used with **_( `>>` )_** to **Reads data** from the keyboard or other input devices.
+
+  - It **automatically adds newline-character _( `\n` )_** after reading the input data(s).
+
+  - **_`cin`_** considers **white-space** as **terminating character.**
+
+    ![cin-example](./Images/cin-example.png)
+
+  - To retain **white-space**, use **_`getline()`_** method.
+
+            // Syntax:
+            getline(cin, stringName);
+
+            // instead of `cin >> stringName;`
+
+  - **e.g:-**
+
+    ![getline-example](./Images/getline.png)
+
+  > **_[NOTE :]_**
+  >
+  > > **_1._ _( `>>` ) :_** known as **Stream extraction operator** or simply **Extraction operator.**
+  >
+  > > **_2._ _( `<<` ) :_** known as **Stream insertion operator** or simply **Insertion operator.**
 
 - **_`endl` :_** Terminate the current line and jump into a **new-line.**
 
@@ -466,18 +509,49 @@
 
 ## **Data types in _`C++`:_**
 
+### **Primitive data types:**
+
 - Various data types that are supported in **_`C++`_** are:
 
   - **`bool` ( 1** byte **) _:_** Only two values: **_true = 1_**, **_false = 0._**
+
   - **`char` ( 1** byte **) _:_** can be assined with **only one character** within single quote **_:_** like **_`'e'`_.**
+
   - **`int` ( 2** or **4** bytes **) _:_** stores only **non-decimal numbers** with smaller range.
-  - **`long` ( 4** bytes **) _:_** stores only **non-decimal numbers** with larger range.
-  - **`long long` ( 8** bytes **) _:_** stores only **non-decimal numbers** with larger range than **_`long`_**.
+
   - **`float` ( 4** bytes **) _:_** stores only **decimal numbers** with smaller range.
+
   - **`double` ( 8** bytes **) _:_** stores only **decimal numbers** with larger range.
+
   - **`string` ( 32** bytes **) _:_** stores **sequence of characters** within double quotes ( **_`" "`_** ) and **Not built-in type**, but behaves like one.
 
-- **Decimal number precision**:
+#### **Decimal number precision**:
 
-  - **_`float` :_ 6** or **7** digits.
-  - **_`double` :_ 15** digits.
+- **_`float` :_ 6** or **7** digits.
+- **_`double` :_ 15** digits.
+
+### **Qualifiers:**
+
+- **Qualifiers** in **_`C++`_** are used to **manipulate** the **_size (or range)_** and/or **_sign_** or **_behaviour_** of the **primitive data types.** such as **int, float, double.**
+
+  - Qualifiers that are used to manipulate the sizes of data types:
+
+    - **`short` ( 2** bytes **) _:_** stores only **non-decimal numbers** with smaller range than **_`int`_** generally.
+
+    - **`long` ( 4** bytes **) _:_** stores only **non-decimal numbers** with larger range than **_`int`_**.
+
+    - **`long long` ( 8** bytes **) _:_** stores only **non-decimal numbers** with larger range than **_`long`_**.
+
+    - **`double long` ( 16** bytes **) _:_** stores only **decimal numbers** with larger range.
+
+  - Qualifiers that are used to manipulate the sign of data types:
+
+    - **`signed` ( 4** bytes **) _:_** Stores both **positive** and **negative** values.
+
+    - **`unsigned` ( 4** bytes **) _:_** Stores only **positive** values.
+
+  - Qualifiers that are used to manipulate the behaviour of data types:
+
+    - **`const` _:_** It restricts the re-assigning new values to the data type prefixed with **_`const`_** keyword.
+
+<hr>

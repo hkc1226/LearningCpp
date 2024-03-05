@@ -554,4 +554,51 @@
 
     - **`const` _:_** It restricts the re-assigning new values to the data type prefixed with **_`const`_** keyword.
 
-<hr>
+<hr style="border-radius: 100px; border:1px solid black; height:10px; background-color: red;">
+
+## **Operators in _`C++`_ :**
+
+- Operators are used to perform specific operations on operands (variable(s) or value(s)).
+
+- There are typically two types of operators:
+  - Binary operator
+  - Unary operator
+
+### **Arithmatic operators:**
+
+- Arithmatic operators are binary operators that are used to perform mathematical operations on operands. Various arithmatic operators are:
+
+  - **Addition _( `+` )_ :** used to adds two or more numbers.
+  - **Subtraction _( `-` )_ :** used to find difference between two numbers.
+  - **Multiplication _( `*` )_ :** used to find product of two or more numbers.
+  - **Division _( `/` )_ :** used to divide a number by another number.
+  - **Modulus _( `%` )_ :** used to find remainder when a number is divided by another number.
+
+### **Assignment operators:**
+
+- desc
+
+#### **Simple assignment :**
+
+- **Assignment _( `=` )_ :** used to assign the value of right operand to the left operand.
+
+#### **Compound assignment :**
+
+- **Addition assignment _( `+=` )_ :** used to update value of left operand by adding value of right operand to the initial value of left operand.
+- **Subtraction assignment _( `-=` )_ :** used to update value of left operand by subtracting value of right operand from the initial value of left operand.
+- **Multiplication assignment _( `*=` )_ :** used to update value of left operand by multiplying value of right operand with initial value of left operand.
+
+<hr style="border-radius: 100px; border:1px solid black; height:10px; background-color: red;">
+
+- **Division assignment _( `/=` )_ :** used to update value of left operand by adding value of right operand to th initial value of left operand
+- **Modulus assignment _( `%=` )_ :** used to assign the value of right operand to the left operand.
+
+### **Unmary operators:**
+
+### **Relational operators:**
+
+### **Logical operators:**
+
+### **Bitwise operators:**
+
+### **Ternary or Conditional operators:**

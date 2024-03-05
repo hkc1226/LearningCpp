@@ -514,26 +514,16 @@
 - Various data types that are supported in **_`C++`_** are:
 
   - **`bool` ( 1** byte **) _:_** Only two values: **_true = 1_**, **_false = 0._**
-<<<<<<< HEAD
 
-  - **`char` ( 1** byte **) _:_** can be assined with **only one character** within single quote **_:_** like **_`'e'`_.**
+  - **`char` ( 1** byte **) _:_** can be assined with **_only one character_** within single quote **_:_** like **_`'e'`_.**
 
-  - **`int` ( 2** or **4** bytes **) _:_** stores only **non-decimal numbers** with smaller range.
+  - **`int` ( 2** or **4** bytes **) _:_** stores only **_non-decimal numbers_** with smaller range.
 
-  - **`float` ( 4** bytes **) _:_** stores only **decimal numbers** with smaller range.
+  - **`float` ( 4** bytes **) _:_** stores only **_decimal numbers_** with smaller range.
 
-  - **`double` ( 8** bytes **) _:_** stores only **decimal numbers** with larger range.
+  - **`double` ( 8** bytes **) _:_** stores only **_decimal numbers_** with larger range.
 
-  - **`string` ( 32** bytes **) _:_** stores **sequence of characters** within double quotes ( **_`" "`_** ) and **Not built-in type**, but behaves like one.
-=======
-  - **`char` ( 1** byte **) _:_** can be assined with ***only one character*** within single quote **_:_** like **_`'e'`_.**
-  - **`int` ( 2** or **4** bytes **) _:_** stores only ***non-decimal numbers*** with smaller range.
-  - **`long` ( 4** bytes **) _:_** stores only ***non-decimal numbers*** with larger range.
-  - **`long long` ( 8** bytes **) _:_** stores only ***non-decimal numbers*** with larger range than **_`long`_**.
-  - **`float` ( 4** bytes **) _:_** stores only ***decimal numbers*** with smaller range.
-  - **`double` ( 8** bytes **) _:_** stores only ***decimal numbers*** with larger range.
-  - **`string` ( 32** bytes **) _:_** stores ***sequence of characters*** within double quotes ( **_`" "`_** ) and ***Not built-in type***, but behaves like one.
->>>>>>> bd476e2ab922838c375cd8e5f525046440ac57a3
+  - **`string` ( 32** bytes **) _:_** stores **_sequence of characters_** within double quotes ( **_`" "`_** ) and **_Not built-in type_**, but behaves like one.
 
 #### **Decimal number precision**:
 

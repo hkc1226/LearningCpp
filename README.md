@@ -593,7 +593,7 @@
 - **Division assignment _( `/=` )_ :** used to update value of left operand by adding value of right operand to th initial value of left operand
 - **Modulus assignment _( `%=` )_ :** used to assign the value of right operand to the left operand.
 
-### **Unmary operators:**
+### **Unary operators:**
 
 ### **Relational operators:**
 

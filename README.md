@@ -2,13 +2,13 @@
 
 ## **Introduction to _`C++`_ programming:**
 
-- Developed by **_Bjarne Stroustrup_** as an extension to **C language.**
+- **_`C++`_** is developed by **_Bjarne Stroustrup_** as an extension to **_C language._**
 
-- **_C++_** is a **cross-platform** and **object-oriented** programming language.
+- It is a **cross-platform** and **object-oriented** programming language.
 
 - It is used to **create high-performance applications.**
 
-- Provides **high-level of control over system resources** and **memory**.
+- It provides **high-level of control over system resources** and **memory**.
 
 ## **Main differences between _`C++`_ & _`C`_:**
 
@@ -16,7 +16,7 @@
 
   - Supports both **procedural** & **object-oriented programming**.
 
-  - Encapsulate both **Data** & **Functions** together as an object.
+  - **Encapsulate** both **Data** & **Functions** together **as an object.**
 
   - Supports both **Built-in** & **User-defined** data types.
 
@@ -44,6 +44,8 @@
 
 ## **Minimal requirements to run a _`C++`_ code:**
 
+### **Requirements:**
+
 - A **_`C++`_ compiler** installed on your system to compile **_`C++`_** code into machine readable format. Most widely used **_`C++`_** compilers are:
 
   - **GNU Compiler Collection (GCC):** [**_<u>`download here`</u>_**](https://sourceforge.net/projects/mingw-w64/)
@@ -58,35 +60,53 @@
 
   - **_IDE :_** Turbo C/C++, Visual Studio Code, Code::Blocks, Eclipse, Xcode.
 
-  ### **Follow the steps to run your code:**
+### **Follow the steps to run your code:**
 
-  After complete installation of an **IDE** and a **text-editor.**
+After complete installation of an **IDE** and a **text-editor.**
 
-  - Write your code in the text-editor and save it with **_`.cpp`_** / **_`.cc`_** / **_`.cxx`_** / **_`.c++`_** extension.
+- Write your code in the text-editor and save it with **_`.cpp`_** / **_`.cc`_** / **_`.cxx`_** / **_`.c++`_** extension.
 
-  - Once **_`.cpp`_** file is saved, open any terminal or command prompt.
+- Once **_`.cpp`_** file is saved, open any terminal or command prompt.
 
-  - Navigate to the folder where **_`.cpp`_** files are saved.
+- Navigate to the folder where **_`.cpp`_** files are saved.
 
-  - Now **Compile** and **Run** with the following command:
+- Now **Compile** and **Run** with the following command:
 
-    - **_To <u>Build / Compile</u> :_** Write command **_`g++ -o filename filename.cpp`_** in command line **Hit Enter.**
+  - **_To <u>Build / Compile</u> :_** Write command **_`g++ -o filename filename.cpp`_ or _`g++ -std=c++11 filename.cpp -o filename`_** in command line and **Hit Enter.**
 
-      ![command to compile cpp code](./Images/compile-cpp-code.png)
+    ![command to compile cpp code](./Images/compile-cpp-code.png)
 
-              // To compile / build C++ code.
-              >> g++ -o filename filename.cpp
-                              OR
-              >> g++ -std=c++11 demo.cpp -o demo
+            // To compile / build C++ code.
+            >> g++ -o filename filename.cpp
+                            OR
+            >> g++ -std=c++11 demo.cpp -o demo
 
-    - **_To <u>Run</u> :_** Write command **_`filename.exe`_** in command line and **Hit Enter.**
+  - **_To <u>Run</u> :_** Write given command below in command line and **Hit Enter.**
 
-      ![command to run cpp code](./Images/run-cpp-code.png)
+    ![command to run cpp code](./Images/run-cpp-code.png)
 
-              // To run C++ code.
-              >> filename.exe // In window cmd prompt.
-                              OR
-              >> ./filename // In VS Code terminal
+            // To run C++ code.
+            >> filename.exe // In window cmd prompt.
+                            OR
+            >> ./filename // In VS Code terminal
+
+### **Life cycle of _`C++`_ code:**
+
+- Life cycle of **_`C++`_** code involves the following steps:
+
+  - **Creating source code** and save source code with some filename followed by appropriate extension. such as **_`.cpp`, `.c++`, `.cc`_** or **_`.cxx`._**
+
+  - **Compile the code.**
+
+  - On successful compilation of source code, it will **create an object file** with extension **_`.obj`._**
+
+  - Then the **object file** is **linked** with **required liberary** for the proper execution of code.
+
+  - After that an **executable file is created** with the name **_`filename.exe`._**
+
+  - **Now the code is ready for execution.**
+
+  ![flows-of-cpp-code](./Images/flows-of-cpp-code-bg.png)
 
 ## **Basic Structure of _`C++`_ programming:**
 
@@ -271,24 +291,6 @@
 
 - **_Line 10 col-1 : ( `}` ) :_** Ends the **_`main()`_ function body**.
 
-## **Life cycle of C++ code:**
-
-- Life cycle of **_`C++`_** code involves the following steps:
-
-  - **Creating source code** and save source code with some filename followed by appropriate extension. such as **_`.cpp`, `.c++`, `.cc`_** or **_`.cxx`._**
-
-  - **Compile the code.**
-
-  - On successful compilation of source code, it will **create an object file** with extension **_`.obj`._**
-
-  - Then the **object file** is **linked** with **required liberary** for the proper execution of code.
-
-  - After that an **executable file is created** with the name **_`filename.exe`._**
-
-  - **Now the code is ready for execution.**
-
-  ![flows-of-cpp-code](./Images/flows-of-cpp-code-bg.png)
-
 ## **Some standard liberary objects:**
 
 - **_`cout` :_**
@@ -367,7 +369,7 @@
 
 - **_newline character (`\n`) :_** Terminate the current line and jump into a **new-line.**
 
-- **_tabspace character (`\t`) :_** Insert a **tabspace** (that is equivalent to **_4-space character_**) **between current-line and new-line** or **within a line.**
+- **_tabspace character (`\t`) :_** Insert a **tabspace** (that is equivalent to **_4-space character_**) **between current-line** and **new-line** or **within a line.**
 
 - **_backslash character (`\\`) :_** Insert a **backslash** character.
 
@@ -505,13 +507,13 @@
   - Identifiers are **case-sensitive**.
   - **White-space(s)** are **not allowed** in identifier.
   - Special characters **(!, @, #, $, %...etc.)** are **not allowed** except underscore **( \_ ).**
-  - Reserved key-word in Cpp are not allowed to be used as an identifier.
+  - Reserved keyword in Cpp are not allowed to be used as an identifier.
 
 ## **Data types in _`C++`:_**
 
 ### **Primitive data types:**
 
-- Various data types that are supported in **_`C++`_** are:
+- Various primitive data types that are supported in **_`C++`_** are:
 
   - **`bool` ( 1** byte **) _:_** Only two values: **_true = 1_**, **_false = 0._**
 
@@ -527,14 +529,17 @@
 
 ### **Decimal number precision**:
 
-- **_`float` :_ 6** or **7** digits.
-- **_`double` :_ 15** digits.
+- It sets the number of digits after decimal **_( `.` )._**
+
+  - **_`float` :_ 6** or **7** digits.
+
+  - **_`double` :_ 15** digits.
 
 ### **Qualifiers:**
 
 - **Qualifiers** in **_`C++`_** are used to **manipulate** the **_size (or range)_** and/or **_sign_** or **_behaviour_** of the **primitive data types.** such as **int, float, double.**
 
-  - Qualifiers that are used to manipulate the sizes of data types:
+  - Qualifiers that are used to **_manipulate the sizes of data types:_**
 
     - **`short` ( 2** bytes **) _:_** stores only **non-decimal numbers** with smaller range than **_`int`_** generally.
 
@@ -544,7 +549,7 @@
 
     - **`double long` ( 16** bytes **) _:_** stores only **decimal numbers** with larger range.
 
-  - Qualifiers that are used to manipulate the sign of data types:
+  - Qualifiers that are used to **_manipulate the sign of data types:_**
 
     - **`signed` ( 4** bytes **) _:_** Stores both **positive** and **negative** values.
 
@@ -552,31 +557,42 @@
 
   - Qualifiers that are used to manipulate the behaviour of data types:
 
-    - **`const` _:_** It restricts the re-assigning new values to the data type prefixed with **_`const`_** keyword.
-
-<hr style="border-radius: 100px; border:1px solid black; height:10px; background-color: red;">
+    - **`const` _:_** It restricts the re-assigning new values to the variable prefixed with **_`const`_** keyword. Any modification results in an errors.
 
 ## **Operators in _`C++`_ :**
 
-- Operators are used to perform specific operations on operands (variable(s) or value(s)).
+- **_Operators_** are used to **_perform specific operations_** on **_operand(s)_** (variable(s) or value(s)).
 
 - There are typically two types of operators:
   - **Binary operator:** Binary operators operates on two operands.
+    - Arithmatic operators **_( `+`, `-`, `*`, `/`, `%` )_**
+    - Assignment operators **_( `=`, `+=`, `-=`, `*=`, `/=`, `%=` )_**
+    - Relational or Comparison operator **_( `==`, `!=`, `>`, `<`, `>=`, `<=` )_**
+    - Logical operator **_( `&&`, `||` )_**
   - **Unary operator:** Unary operators operates on single operands.
+    - Increment **_( `++` )_**
+    - Decrement **_( `--` )_**
+    - Logical operator **_( `!` )_**
 
 ### **Arithmatic operators:**
 
-- Arithmatic operators are binary operators that are used to perform mathematical operations on operands. Various arithmatic operators are:
+- **Arithmatic operators** are **binary operators** that are used to **perform mathematical operations on operands.** Various arithmatic operators are:
 
   - **Addition _( `+` )_ :** used to adds two or more numbers.
+
   - **Subtraction _( `-` )_ :** used to find difference between two numbers.
+
   - **Multiplication _( `*` )_ :** used to find product of two or more numbers.
+
   - **Division _( `/` )_ :** used to divide a number by another number.
+
   - **Modulus _( `%` )_ :** used to find remainder when a number is divided by another number.
 
 ### **Assignment operators:**
 
-- desc
+- **Assignment operators** are also type of **binary operators** which is shorter way to use arithmatic operators.
+
+- Assign updated value to left operand by performing some mathematical task on itself.
 
 #### **Simple assignment :**
 
@@ -585,23 +601,138 @@
 #### **Compound assignment :**
 
 - **Addition assignment _( `+=` )_ :** used to update value of left operand by adding value of right operand to the initial value of left operand.
+
 - **Subtraction assignment _( `-=` )_ :** used to update value of left operand by subtracting value of right operand from the initial value of left operand.
+
 - **Multiplication assignment _( `*=` )_ :** used to update value of left operand by multiplying value of right operand with initial value of left operand.
 
-<hr style="border-radius: 100px; border:1px solid black; height:10px; background-color: red;">
+- **Division assignment _( `/=` )_ :** used to update value of left operand after dividing left operand by right operand.
 
-- **Division assignment _( `/=` )_ :** used to update value of left operand by adding value of right operand to th initial value of left operand
-- **Modulus assignment _( `%=` )_ :** used to assign the value of right operand to the left operand.
+- **Modulus assignment _( `%=` )_ :** It stores the remainder to left operand when number itself (value of left operand) is divided by right operand.
 
 ### **Unary operators:**
 
 - **Increment _( `++` )_ :** It is used to update the value of operand by **adding** value **1** to its initial value.
 - **Decrement _( `--` )_ :** It is used to update the value of operand by **subtracting** value **1** from its initial value.
 
-### **Relational operators:**
+> **_[NOTE:]_** Both these operator can be used in two ways:
+>
+> > **1. post-increment** or **post-decrement.**<br> **2. pre-increment** or **pre-decrement.**
+>
+> [**_Learn more_**]()
+
+### **Relational/Comparision operators:**
+
+- **Relational operators** are also **binary operators** used to **_compare two values_** and determine the relationship between them.
+
+- It **returns** a boolean value **_( `0`_** or **_`1` )_** based on the comparison result.
+
+- Different types of relational operators are:
+
+  - **Is Equal to _( `==` )_ :** Checks if the values of two operands are equal.
+
+    - Returns **_`1`_** if **values are equal.**
+
+    - Returns **_`0`_** if **values are not equal.**
+
+  - **Not Equal to _( `!=` )_ :** Checks if the values of two operands are not equal.
+
+    - Returns **_`1`_** if **values are not equal.**
+
+    - Returns **_`0`_** if **values are equal.**
+
+  - **Greater than _( `>` )_ :** Checks if the value of the left operand is greater than the value of the right operand.
+
+    - Returns **_`1`_** if **left operand _`>`_ right operand.**
+
+    - Returns **_`0`_** if **left operand _`<`_ right operand.**
+
+  - **Less than _( `<` )_ :** Checks if the value of the left operand is less than the value of the right operand.
+
+    - Returns **_`1`_** if **left operand _`<`_ right operand.**
+
+    - Returns **_`0`_** if **left operand _`>`_ right operand.**
+
+  - **Greater than or Equal to _( `>=` )_ :** Checks if the value of the left operand is greater than or equal to the value of the right operand.
+
+    - Returns **_`1`_** if **left operand _`>=`_ right operand.**
+
+    - Returns **_`0`_** if **left operand _`<`_ right operand.**
+
+  - **Less than or Equal to _( `>=` )_ :** Checks if the value of the left operand is less than or equal to the value of the right operand.
+
+    - Returns **_`1`_** if **left operand _`<=`_ right operand.**
+
+    - Returns **_`0`_** if **left operand _`>`_ right operand.**
 
 ### **Logical operators:**
 
+- Logical operators are used to perform logical operations on boolean values or expressions.
+
+- It **returns** boolean value **_( `1` or `0` )_** as result after evaluating the expression.
+
+- There are three types of logical operation in **_`C++` :_**
+
+  - **Logical AND _( `&&` )_ :** Checks if all the boolean values and/or relational expressions are true.
+
+    - Returns **_`1` :_** if **all** the boolean values and/or expressions are **true.**
+
+    - Returns **_`0` :_** if **atleast one** boolean value or expression are **false.**
+
+    > **_[NOTE:]_** <br> As early as the expression encounters a **_`false`_** value or condition, it stops further evaluation of the expression and return **_`0`._**
+
+  - **Logical OR _( `||` )_ :** Checks if atleast one boolean values or relational expressions are true.
+
+    - Returns **_`1` :_** if **atleast one** boolean value or relational expression are **true.**
+
+    - Returns **_`0` :_** if **all** the boolean values and/or relational expressions are **false.**
+
+    > **_[NOTE:]_** <br> As early as the expression encounters a **_`true`_** value or condition, it stops further evaluation of the expression and return **_`1`._**
+
+  - **Logical NOT _( `!` )_ :** It is used to negate the value of its operand.
+
+    - Returns **_`1` :_** if the value of operand is **_`false`._**
+
+    - Returns **_`0` :_** if the value of operand is **_`true`._**
+
+    > **_[NOTE:]_** <br> The **logical NOT** operator is often **used** in **conditional statements, loops, and boolean expressions** to modify the logical state of expressions.
+
 ### **Bitwise operators:**
 
+- It performs bit-level specific operations on integral operands (integer data types).
+
+- These operators manipulate individual bits of integers directly.
+
+- Firstly, it **converts** the **operands into binary numbar** (that is in form of **_`0`_** & **_`1`_**). then perform bitwise operation on each bits.
+
+- There are various types of bitwise operators:
+
+  - **Bitwise AND _( `&` )_ :** Sets each bit to **_`1`_ if** corresponding **bits of each operands** are **_1_**, otherwise sets it to **_`0`._**
+
+    ![&](./Images/bitwise-and.png)
+
+  - **Bitwise OR _( `|` )_ :** Sets each bit to **_`1`_ if either of the corresponding bits** of operands is/are **_1_**, otherwise sets it to **_`0`._**
+
+    ![|](./Images/bitwise-or.png)
+
+  - **Bitwise XOR _( `^` )_ :** Sets each bit to **_`1`_ if only one of the two** corresponding bits of the operands is **_1_**, otherwise sets it to 0.
+
+    ![^](./Images/bitwise-xor.png)
+
+  - **Bitwise NOT _( `~` )_ :** It **reverse each bits** of an operand **from _`1`_** to **_`0`_** and vice-versa.
+
+    ![~](./Images/bitwise-not.png)
+
+  - **Right Shift _( `>>` )_ : Shifts the bits** of the left operand **to the right by a number of positions** specified by the right operand. **Vacated bits are filled with zeros.**
+
+    ![>>](./Images/bitwise-rs.png)
+
+  - **Left Shift _( `<<` )_ : Shifts the bits** of the left operand **to the left by a number of positions** specified by the right operand. **Vacated bits are filled with zeros.**
+
+    ![<<](./Images/bitwise-ls.png)
+
+<hr style="border-radius: 100px; border:1px solid black; height:10px; background-color: red;">
+
 ### **Ternary or Conditional operators:**
+
+<hr style="border-radius: 100px; border:1px solid black; height:10px; background-color: red;">

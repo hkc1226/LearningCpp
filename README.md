@@ -734,5 +734,3 @@ After complete installation of an **IDE** and a **text-editor.**
 <hr style="border-radius: 100px; border:1px solid black; height:10px; background-color: red;">
 
 ### **Ternary or Conditional operators:**
-
-<hr style="border-radius: 100px; border:1px solid black; height:10px; background-color: red;">

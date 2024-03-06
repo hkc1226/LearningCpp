@@ -610,6 +610,16 @@ After complete installation of an **IDE** and a **text-editor.**
 
 - **Modulus assignment _( `%=` )_ :** It stores the remainder to left operand when number itself (value of left operand) is divided by right operand.
 
+- **Bitwise-AND assignment _( `&=` )_**
+
+- **Bitwise-OR assignment _( `|=` )_**
+
+- **Bitwise-XOR assignment _( `^=` )_**
+
+- **Right-Shift assignment _( `>>=` )_**
+
+- **Left-Shift assignment _( `<<=` )_**
+
 ### **Unary operators:**
 
 - **Increment _( `++` )_ :** It is used to update the value of operand by **adding** value **1** to its initial value.

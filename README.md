@@ -717,7 +717,7 @@ After complete installation of an **IDE** and a **text-editor.**
 
   - **Bitwise XOR _( `^` )_ :** Sets each bit to **_`1`_ if only one of the two** corresponding bits of the operands is **_1_**, otherwise sets it to 0.
 
-    ![^](./Images/bitwise-xor.png)
+    ![xor](./Images/bitwise-xor.png)
 
   - **Bitwise NOT _( `~` )_ :** It **reverse each bits** of an operand **from _`1`_** to **_`0`_** and vice-versa.
 

@@ -563,16 +563,20 @@ After complete installation of an **IDE** and a **text-editor.**
 
 - **_Operators_** are used to **_perform specific operations_** on **_operand(s)_** (variable(s) or value(s)).
 
-- There are typically two types of operators:
-  - **Binary operator:** Binary operators operates on two operands.
+- There are typically three types of operators:
+  - **Unary operators:** Unary operators operates on single operands.
+    - Increment **_( `++` )_**
+    - Decrement **_( `--` )_**
+    - Logical operator **_( `!` )_**
+    - Bitwise operator **_( `~` )_**
+  - **Binary operators:** Binary operators operates on two operands.
     - Arithmatic operators **_( `+`, `-`, `*`, `/`, `%` )_**
     - Assignment operators **_( `=`, `+=`, `-=`, `*=`, `/=`, `%=` )_**
     - Relational or Comparison operator **_( `==`, `!=`, `>`, `<`, `>=`, `<=` )_**
     - Logical operator **_( `&&`, `||` )_**
-  - **Unary operator:** Unary operators operates on single operands.
-    - Increment **_( `++` )_**
-    - Decrement **_( `--` )_**
-    - Logical operator **_( `!` )_**
+    - Bitwise operator **_( `&`, `|`, `^`, `<<`, `>>` )_**
+  - **Ternary operators:** Ternary operators involves three operands or expressions or components.
+    - Conditional/Ternary operator **_( `condition ? exp1 : exp2` )_**
 
 ### **Arithmatic operators:**
 
@@ -741,5 +745,26 @@ After complete installation of an **IDE** and a **text-editor.**
 
     ![<<](./Images/bitwise-ls.png)
 
-
 ### **Ternary or Conditional operators:**
+
+- It is a unique operator in programming languages that operands on three operands.
+
+- It is oftenly used as shorthand for **_`if-else`_** conditional statement.
+
+- It is also known as **_Conditioinal operators._**
+
+- **_Syntex:_**
+
+  ![conditinal-operator-syntax](./Images/conditinal-operator-syntax.png)
+
+              // Syntax : Conditional Operator
+
+              condition ? expression1 : expression2
+
+- Working of **conditional operators _( `? :` ) -_** It takes three operands as given:
+
+  **_1. condition :_** It is a test condition to evaluate result on the basis of which conditional statement will produce the result either expression1 or expression2.
+
+  **_2. expression1 :_** This expression will be executed only if the condition is **_`true`._**
+
+  **_3. expression2 :_** This expression will be executed only if the condition is **_`false`._**

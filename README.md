@@ -768,3 +768,6 @@ After complete installation of an **IDE** and a **text-editor.**
   **_2. expression1 :_** This expression will be executed only if the condition is **_`true`._**
 
   **_3. expression2 :_** This expression will be executed only if the condition is **_`false`._**
+
+- **_Example :_**
+  ![conditional-operator-example](./Images/conditinal-operator-example.png)
